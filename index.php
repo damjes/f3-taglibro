@@ -13,9 +13,6 @@ $f3 = Base::instance();
 //ŝarĝu uzantajn agordojn
 $f3->config('agordoj.ini');
 
-//konektiĝu al datumbazo
-require 'modelo/enshaltu.php';
-
 //ŝarĝu vojojn
 $f3->config('regilo/vojoj.ini');
 
