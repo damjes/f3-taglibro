@@ -7,9 +7,7 @@ class Afisho extends DB\SQL\Mapper {
 		$afisho->load(array('id=?', intval($kia)));
 		$afisho->rekreuMD();
 		$afisho->copyTo('afisho');
-		$f3->set('titolo', $afisho->titolo.' – '.$f3->get('aspekto.retejnomo'));
-		$f3->set('tipo', 'unu_afisho');
-		echo Template::instance()->render('vidigilo/malfona.html');
+        Vidigilo::malfona($afisho->titolo, 'unu_afisho');
 	}
 
 	static function montruChiujEl($f3, $el) {
@@ -27,7 +25,7 @@ class Afisho extends DB\SQL\Mapper {
 		parent::__construct($db, 'afishoj');
 	}
 
-	function puriguMD() {
+    function puriguMD() {
 		$this->markdown = '';
 		$this->save();
 	}
