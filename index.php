@@ -1,7 +1,7 @@
 <?php
 
 function dumtempa () {
-    echo 'Funkcias!';
+	echo 'Funkcias!';
 }
 
 //enŝaltu na Composer
