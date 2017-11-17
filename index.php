@@ -8,7 +8,7 @@ function dumtempa () {
 require 'vendor/autoload.php';
 
 //enŝaltu na F3
-$f3 = \Base::instance();
+$f3 = Base::instance();
 
 //ŝarĝu uzantajn agordojn
 $f3->config('agordoj.ini');
