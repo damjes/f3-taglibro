@@ -1,3 +1,5 @@
+; <?php /*
+
 [datumbazo]
 servilo=localhost
 uzanto=root
@@ -8,3 +10,5 @@ datumbazo=taglibro
 [aspekto]
 afishoj_per_pagho=6
 retejnomo=Mia taglibro
+
+; /*i

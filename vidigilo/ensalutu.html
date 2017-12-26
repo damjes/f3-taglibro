@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	
+		<title>Ensalutu!</title>
+		<include href="vidigilo/eroj/semantic.html">
+	
+		<style type="text/css">
+body {
+	background-color: #DADADA;
+}
+body > .grid {
+	height: 100%;
+}
+.image {
+	margin-top: -100px;
+}
+.column {
+	max-width: 450px;
+}
+		</style>
+		<script>
+semantic.message = {};
+
+// ready event
+semantic.message.ready = function() {
+
+
+  $('.message .close').on('click', function() {
+    $(this).closest('.message').transition('fade');
+  });
+
+};
+
+
+// attach ready event
+$(document)
+  .ready(semantic.message.ready)
+;
+		</script>
+	</head>
+	<body>
+		<div class="ui middle aligned center aligned grid">
+			<div class="column">
+				<h2 class="ui blue image header">
+					<div class="content">
+						Ensalutu al Via konto!
+					</div>
+				</h2>
+				<form class="ui large form" method="POST">
+					<div class="ui segment">
+						<div class="field">
+							<div class="ui left icon input">
+								<i class="user icon"></i>
+								<input type="text" name="uzanto" placeholder="Uzanto">
+							</div>
+						</div>
+						<div class="field">
+							<div class="ui left icon input">
+								<i class="lock icon"></i>
+								<input type="password" name="pasvorto" placeholder="Pasvorto">
+							</div>
+						</div>
+						<input class="ui fluid large blue submit button" type="submit" value="Ek!">
+					</div>
+				</form>
+				<div class="ui message">
+					<i class="close icon"></i>
+					<div class="header">
+						There were some errors with your submission
+					</div>
+					<ul class="list">
+						<li>You must include both a upper and lower case letters in your password.</li>
+						<li>You need to select your home country.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

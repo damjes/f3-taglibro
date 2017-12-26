@@ -11,7 +11,7 @@ require 'vendor/autoload.php';
 $f3 = Base::instance();
 
 //ŝarĝu uzantajn agordojn
-$f3->config('agordoj.ini');
+$f3->config('agordoj.ini.php');
 
 //ŝarĝu vojojn
 $f3->config('regilo/vojoj.ini');
