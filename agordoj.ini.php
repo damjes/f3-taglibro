@@ -11,4 +11,4 @@ datumbazo=taglibro
 afishoj_per_pagho=6
 retejnomo=Mia taglibro
 
-; /*i
+; /*
